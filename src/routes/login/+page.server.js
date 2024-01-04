@@ -1,4 +1,4 @@
-import { redirect } from '@sveltejs/kit';
+import { fail, redirect } from '@sveltejs/kit';
 
 /** @type {import('./$types').PageServerLoad} */
 export async function load({ cookies }) {
@@ -12,10 +12,17 @@ export async function load({ cookies }) {
 
 /** @type {import('./$types').Actions} */
 export const actions = {
-	login: async (event) => {
+	login: async ({ cookies, request, url }) => {
 		// TODO log the user in
 		console.log('Logging user in');
-		return { success: true };
+		const { email, password } = Object.fromEntries(await request.formData());
+
+		if (email != '' && password != ''){
+			return { success: true };
+		}
+		else {
+			return fail(400, { email, missing: true })
+		}
 	},
 	register: async (event) => {
 		// TODO register the user
