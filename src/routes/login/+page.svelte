@@ -1,4 +1,6 @@
 <script>
+	import { enhance } from '$app/forms';
+
 	/** @type {import('./$types').PageData} */
 	export let data;
 
@@ -23,6 +25,10 @@
 	<!-- Goes to `register` function in /login/+page.server.js -->
 	<button formaction="?/register">Register</button>
 	<button formaction="/login?/register">Register</button>
+</form>
+
+<form method="POST" action="?/login" use:enhance>
+	<button>Log in (enhanced)</button>
 </form>
 
 <!-- Alternative to `formaction` -->
