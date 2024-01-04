@@ -22,6 +22,7 @@
 
 	<!-- Goes to `register` function in /login/+page.server.js -->
 	<button formaction="?/register">Register</button>
+	<button formaction="/login?/register">Register</button>
 </form>
 
 <!-- Alternative to `formaction` -->
