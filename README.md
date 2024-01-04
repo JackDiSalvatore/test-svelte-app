@@ -60,3 +60,9 @@ You can preview the production build with `npm run preview`.
 7. +server.js : defines a REST API endpoint
 
 ```
+
+From: https://kit.svelte.dev/docs/load
+
+> Server load functions are convenient when you need to access data directly from a database or filesystem, or need to use private environment variables.
+
+> Universal load functions are useful when you need to fetch data from an external API and don't need private credentials, since SvelteKit can get the data directly from the API rather than going via your server. They are also useful when you need to return something that can't be serialized, such as a Svelte component constructor.
