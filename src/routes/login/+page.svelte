@@ -24,6 +24,11 @@
 	<button formaction="?/register">Register</button>
 </form>
 
+<!-- Alternative to `formaction` -->
+<form method="POST" action="/login?/register">
+	<button>Register</button>
+</form>
+
 {#if form?.success}
 	<!-- this message is ephemeral; it exists because the page was rendered in
 		   response to a form submission. it will vanish if the user reloads -->
