@@ -7,7 +7,8 @@ export function load() {
 			{ title: 'Blog', link: '/blog/hello-world' },
 			{ title: 'Settings', link: '/settings' },
 			{ title: 'Login', link: '/login' },
-			{ title: 'Account', link: '/account' }
+			{ title: 'Account', link: '/account' },
+			{ title: 'Counter', link: '/counter' }
 		]
 	}
 }

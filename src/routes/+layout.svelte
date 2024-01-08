@@ -1,4 +1,6 @@
 <script>
+    import { counter } from "../stores/counter";
+
     /** @type {import('./$types').LayoutData} */
     export let data;
 </script>
@@ -13,6 +15,8 @@
     {#each data.navOptions as nav}
         <a href={nav.link}>{nav.title}</a>
     {/each}
+
+    {$counter}
 </nav>
 
 <!-- App "page" goes here -->
