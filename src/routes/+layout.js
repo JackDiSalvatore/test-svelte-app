@@ -9,7 +9,8 @@ export function load() {
 			{ title: 'Login', link: '/login' },
 			{ title: 'Account', link: '/account' },
 			{ title: 'Counter', link: '/counter' },
-			{ title: 'Pokemon', link: '/pokemon'}
+			{ title: 'Pokemon', link: '/pokemon'},
+			{ title: 'Context Example', link: '/context-example'}
 		]
 	}
 }
