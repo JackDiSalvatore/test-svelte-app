@@ -8,7 +8,8 @@ export function load() {
 			{ title: 'Settings', link: '/settings' },
 			{ title: 'Login', link: '/login' },
 			{ title: 'Account', link: '/account' },
-			{ title: 'Counter', link: '/counter' }
+			{ title: 'Counter', link: '/counter' },
+			{ title: 'Pokemon', link: '/pokemon'}
 		]
 	}
 }
