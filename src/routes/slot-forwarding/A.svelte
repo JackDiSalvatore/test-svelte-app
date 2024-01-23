@@ -3,7 +3,7 @@
 </script>
 
 <B>
-	<div slot='b-header'>
-		<h1>Header from A</h1>
+	<div slot='b-header' let:counter>
+		<h1>Header from A: { counter }</h1>
 	</div>
 </B>
