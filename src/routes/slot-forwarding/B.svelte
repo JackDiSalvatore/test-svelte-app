@@ -3,7 +3,5 @@
 </script>
 
 <C>
-	<svelte:fragment slot="header">
-		<slot name="b-header" />
-	</svelte:fragment>
+	<slot name="b-header" slot="header" />
 </C>
