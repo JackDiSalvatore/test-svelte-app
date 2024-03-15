@@ -11,7 +11,8 @@ export function load() {
 			{ title: 'Counter', link: '/counter' },
 			{ title: 'Pokemon', link: '/pokemon'},
 			{ title: 'Context Example', link: '/context-example'},
-			{ title: 'Slot Forwarding', link: '/slot-forwarding' }
+			{ title: 'Slot Forwarding', link: '/slot-forwarding' },
+			{ title: 'List', link: '/list' }
 		]
 	}
 }
